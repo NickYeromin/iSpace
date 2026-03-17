@@ -1,0 +1,49 @@
+.toup {
+	position: fixed; /* фиксируем кнопку при скролле */
+	bottom: 30px;
+	right: 30px;
+
+	height: 70px;
+	width: 70px;
+
+	background-color: goldenrod;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	color: #3b3b3b;
+	cursor: pointer;
+
+	/* transition: transform 0.3s ease, background-color 0.3s ease; */
+}
+
+.toup-active {
+	animation: toup-rocket 0.5s linear; /* forwards сохраняет финальное состояние */
+}
+
+@keyframes toup-rocket {
+	0% {
+		transform: translateY(0);
+		filter: blur(0px);
+		opacity: 1;
+	}
+	10% {
+		color: goldenrod;
+		background: none;
+	}
+	90% {
+		color: goldenrod;
+		filter: blur(0px);
+		opacity: 0.3;
+	}
+	100% {
+		transform: translateY(-350px); /* эффект “взлета” */
+		color: white;
+		filter: blur(25px);
+		display: none;
+		background: none;
+		opacity: 0.1;
+		/* background-color: gold; */
+	}
+}

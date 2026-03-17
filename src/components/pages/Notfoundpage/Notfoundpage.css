@@ -1,0 +1,11 @@
+.notfounpage {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.notfounpage img {
+	position: absolute;
+	/* top: 10vh; */
+	width: 50%;
+}
