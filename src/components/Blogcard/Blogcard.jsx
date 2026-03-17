@@ -1,4 +1,5 @@
 import "./Blogcard.css";
+import { Link } from "react-router-dom";
 
 export default function Blogcard({ id,image, title, description }) {
 	return (
@@ -6,9 +7,9 @@ export default function Blogcard({ id,image, title, description }) {
 			<img src={image} alt="" />
 			<span className="title">{title}</span>
 			<span className="description">{description.slice(0, 100)}...</span>
-			<a className="read-blog" href={`/blog/${id}`}>
+			<Link className="read-blog" to={`/blog/${id}`}>
 				Read more
-			</a>
+			</Link>
 		</div>
 	);
 }

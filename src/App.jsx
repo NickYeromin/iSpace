@@ -33,13 +33,13 @@ function App() {
 			<ToUp scrollY={isScrollY} />
 
 			<Routes>
-				<Route path="/iSpace" element={<Homepage />} />
-				<Route path="/iSpace/news" element={<Newspage />} />
-				<Route path="/iSpace/blogs" element={<Blogspage />} />
+				<Route path="/" element={<Homepage />} />
+				<Route path="/news" element={<Newspage />} />
+				<Route path="/blogs" element={<Blogspage />} />
 
-				<Route path="/iSpace/news/:id" element={<Newscardpage />} />
-				<Route path="/iSpace/blog/:id" element={<Blogpage />} />
-				<Route path="/iSpace/requests" element={<Reportspage />} />
+				<Route path="/news/:id" element={<Newscardpage />} />
+				<Route path="/blog/:id" element={<Blogpage />} />
+				<Route path="/requests" element={<Reportspage />} />
 
 				<Route path="*" element={<Notfoundpage />} />
 			</Routes>

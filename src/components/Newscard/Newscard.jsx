@@ -1,4 +1,5 @@
 import "./Newscard.css";
+import { Link } from "react-router-dom";
 
 export default function Newscard({ id, image, title, description }) {
 	return (
@@ -7,9 +8,9 @@ export default function Newscard({ id, image, title, description }) {
 			<div className="other">
 				<span className="title">{title}</span>
 				<span className="description">{description.slice(0, 210)}...</span>
-				<a className="read-news" href={`/news/${id}`}>
+				<Link className="read-news" to={`/news/${id}`}>
 					Read more
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

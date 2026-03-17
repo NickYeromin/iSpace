@@ -21,18 +21,26 @@
 	font-weight: bold;
 }
 
+.header .logo:hover{
+	scale: 1.1;
+	color: brown;
+}
+
 .header nav {
 	flex: 3;
 	display: flex;
 	justify-content: space-around;
 }
 
-.header nav a {
+.header nav .nav-link {
 	color: black;
+	font-size: 18px;
+	font-weight: 400;
 }
 
-.header a:hover {
-	color: red;
+.header .nav-link:hover {
+	color: brown;
+	scale: 1.1;
 }
 
 @media (max-width: 1100px) {

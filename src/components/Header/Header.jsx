@@ -1,13 +1,22 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
 	return (
 		<div className="header">
-			<a href="/" className="logo">iSpace</a>
+			<Link to="/" className="logo">
+				iSpace
+			</Link>
 			<nav>
-				<a href="/news">News</a>
-				<a href="/blogs">Blogs</a>
-				<a href="/requests">Requests</a>
+				<Link to="/news" className="nav-link">
+					News
+				</Link>
+				<Link to="/blogs" className="nav-link">
+					Blogs
+				</Link>
+				<Link to="/requests" className="nav-link">
+					Requests
+				</Link>
 			</nav>
 		</div>
 	);
