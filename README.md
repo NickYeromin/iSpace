@@ -14,6 +14,8 @@ The goal of the project is to demonstrate working with APIs, dynamic content, an
 ---
 ## 📦 Technologies
 -**React** - building components and interactive interfaces
+
 -**Vite** - fast and modern build process
+
 -**JavaScript (ES6+)** - application logic and working with APIs
 
