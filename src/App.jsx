@@ -27,20 +27,19 @@ function App() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [isScrollY]);
 
-
 	return (
 		<>
 			<Header />
 			<ToUp scrollY={isScrollY} />
 
 			<Routes>
-				<Route path="/" element={<Homepage />} />
-				<Route path="/news" element={<Newspage />} />
-				<Route path="/blogs" element={<Blogspage />} />
+				<Route path="/iSpace" element={<Homepage />} />
+				<Route path="/iSpace/news" element={<Newspage />} />
+				<Route path="/iSpace/blogs" element={<Blogspage />} />
 
-				<Route path="/news/:id" element={<Newscardpage />} />
-				<Route path="/blog/:id" element={<Blogpage />} />
-				<Route path="/requests" element={<Reportspage />} />
+				<Route path="/iSpace/news/:id" element={<Newscardpage />} />
+				<Route path="/iSpace/blog/:id" element={<Blogpage />} />
+				<Route path="/iSpace/requests" element={<Reportspage />} />
 
 				<Route path="*" element={<Notfoundpage />} />
 			</Routes>
